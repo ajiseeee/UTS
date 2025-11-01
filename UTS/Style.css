@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 400px;
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #eee;
+}
+
+.foto-label {
+    font-size: 0.95em;
+    color: #888;
+    margin-top: 8px;
+}
+
+.nama {
+    font-size: 2em;
+    margin: 18px 0 6px 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.desc {
+    text-align: center;
+    color: #444;
+    font-size: 1em;
+    margin-bottom: 18px;
+}
+
+.kontak-title, .keahlian-title {
+    font-size: 1.25em;
+    margin-top: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.kontak p {
+    margin: 6px 0;
+    text-align: center;
+    color: #555;
+    font-size: 1em;
+}
+
+.kontak a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.keahlian {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.skill {
+    background-color: #e4e4e4;
+    color: #333;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        max-width: 98%;
+        padding: 12px;
+    }
+    .profile-image img {
+        width: 88px;
+        height: 88px;
+    }
+    .nama {
+        font-size: 1.5em;
+    }
+    .keahlian-title, .kontak-title {
+        font-size: 1em;
+    }
+}
